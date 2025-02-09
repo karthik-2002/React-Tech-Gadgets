@@ -1,0 +1,306 @@
+/* src/styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #131921; /* Amazon Header Color */
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ffa41c; /* Amazon hover color */
+}
+
+.cart-count {
+    background-color: #ffa41c;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 5px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #b12704; /* Amazon's price color */
+}
+
+button {
+    background-color: #ffa41c; /* Amazon's button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff8c00; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer nav a {
+    color: #ffa41c;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Login Page */
+.login-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container div {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Additional Styles for Login and Registration */
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #ffa41c; /* Amazon's focus color */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #ffa41c; /* Amazon's button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3 s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff8c00; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Error Message Styles */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Responsive Styles for Login and Registration */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; /* Make the login container responsive */
+    }
+
+    .register-container {
+        width: 90%; /* Make the register container responsive */
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* User Info Styles */
+.user-info {
+    margin: 10px 20px; /* Margin to separate from the navbar */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 14px; /* Smaller font size */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between text and button */
+    align-items: center; /* Center items vertically */
+}
+.sort-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sort-filter-container label {
+    margin-right: 10px;
+}
+
+.sort-filter-container button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sort-filter-container button:hover {
+    background-color: #e0e0e0;
+}
+
+.sort-filter-container select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sort-filter-container select:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px rgba(0, 127, 255, 0.5);
+}
+
+
+.user-info p {
+    margin: 0; /* Remove default margin */
+}
+
+.user-info button {
+    background-color: #ffa41c; /* Amazon's button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Smaller padding for the button */
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size for the button */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.user-info button:hover {
+    background-color: #ff8c00; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h1 {
+        margin-bottom: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack products on smaller screens */
+    }
+}
